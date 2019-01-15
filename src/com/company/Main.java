@@ -25,9 +25,6 @@ public class Main {
             list[i] = Integer.parseInt(stArray[i]);
         }
 
-        while (stArray.length != iArrayLength) {
-            System.out.println("Please input " + iArrayLength + " integers");
-
             for (int i = 0; i < iArrayLength; i++) {
                 list[i] = Integer.parseInt(stArray[i]);
             }
@@ -37,7 +34,7 @@ public class Main {
                 list[i] = list[list.length - 1 - i];
                 list[list.length - 1 - i] = temp;
             }
-        }
+
         System.out.println(Arrays.toString(list));
     }
 }
